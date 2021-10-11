@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html,body{
+            height:100%;
+            margin:0;
+            padding:0;
+            border:0;
+            background-color: #c46565;
+        }
+
+        #clockdate{
+            margin-top: 60px;
+            margin-left: 200px;
+            width:max-content;
+        }
+
+        #divheader {
+            background-color: grey;
+            width: 100%;
+            height: 85px;
+        }
+        div{
+            margin:0;
+            border:0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+
+            display: inline;
+            float: right;
+            margin-right: 50px;
+        }
+
+        .topnav {
+
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .topnav a {
+            color: white;
+        }
+
+        #logo-img {
+            position: absolute;
+            margin: 1em;
+            margin-top: 10px;
+            height: 90px;
+            width: 90px;
+        }
+
+        #herocontainer {
+            width: 100%;
+            height: 200px;
+            background-color: #34145e;
+        }
+
+        #herotext {
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 16px;
+        }
+
+        #hero-img {
+
+            height: 250px;
+            width: 100%;
+        }
+
+        #header {
+            position: absolute;
+            height: 20px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 10px;
+        }
+
+        body div form input {
+            background-color: lightgray;
+        }
+
+        .grid-container1 {
+            display: grid;
+            width: auto;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-gap: 10px;
+            background-color: #c46565;
+            padding: 10px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .grid-container1 > div {
+            background-color: rgba(197, 82, 82, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .grid-container1 > div > a{
+            color: white;
+
+        }
+
+
+        .parent {
+            display: grid;
+            grid-template-columns: auto;
+            grid-row-gap: 5px;
+            grid-column-gap: 40px;
+            margin-top: 150px;
+            margin-right: 25px;
+            margin-left: 25px;
+            background-color: #c46565;
+        }
+
+        .parent > div {
+            border: 1px solid #ccc;
+            margin-top: 4px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #dfbfca;
+        }
+
+        .child-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 200px;
+            font-size: 16px;
+
+        }
+
+        .child-2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height: 200px;
+            font-size: 16px;
+        }
+
+        .child-3 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 400px;
+            font-size: 16px;
+
+        }
+
+     
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #caa4a4;
+            height: 80px;
+            width: 100%;
+            padding-left: 20px;
+            margin-left: auto;
+        }
+        .footertext {
+        padding-top: 20px;
+        text-align: center;
+        }
+
+
+    </style>
+
+    <script language="JavaScript">
+        function gettime() {
+            var date= new Date();
+            
+            
+            document.formclock.clockdate.value=date;
+
+            
+        }
+        </script>
+
+</head>
+
+
+<body onload="gettime()">
+
+ 
+<div id="divheader">  
+
+    <form id="form1" name="formclock">
+        <input type="text" id="clockdate" name="clockdate" style="color:red;">
+    </form>
+    <header id="header">
+        <img src="./images/logo.jpg" alt="logo" id="logo-img">
+        <ul class="topnav" id="nav-bar">
+
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="About.html">About </a></li>
+        </ul>
+
+        
+    </header>
+</div>
+
+<div class="grid-container1">
+    <div class="item1"><a href="product.html">Birthday Bouquets</a></div>
+    <div class="item2"><a href="product.html">Birthday Ballons</a></div>
+    <div class="item3"><a href="product.html">Ballons Accessories</a></div>
+    <div class="item4"><a href="product.html">Ballons Decoration</a></div>
+    <div class="item5"><a href="product.html">Ballons in Bulk</a></div>
+   
+
+</div>
+
+
+<div id="herocontainer">
+ 
+    <img src="./images/hero.jpg" alt="Hero Image" id="hero-img">
+ 
+    <p id="herotext">The main features of the business are a large selection of balloons and balloon-themed products for
+        all occasions, local delivery within 75 miles of the main store, two-day shipping anywhere in the USA, free
+        shipping on orders over $100, and a "Balloon-of-the-Month" club that sends an assortment of mystery balloons in
+        a box once per month for $39.95.</p>
+</div>
+
+
+<div class="parent">
+    <div class="child-1">
+        <p id="para1">
+            Nunc ultrices molestie rutrum. Duis non molestie odio, venenatis malesuada felis. Etiam vehicula purus a lacus tincidunt, sed ultrices mauris porta. Duis quis commodo mi. Quisque pretium ligula quis nisi lobortis, quis pharetra massa vehicula. Aliquam tempor nec dolor tempor accumsan. Praesent ac efficitur risus, sit amet fringilla erat. Ut iaculis, libero ut malesuada molestie, risus nibh imperdiet turpis, euismod imperdiet felis urna mollis nulla. Duis finibus tortor laoreet augue vulputate, ac aliquet ante blandit. Nullam nec blandit nisi, at dapibus dolor. Fusce pulvinar enim ac viverra rutrum. Praesent consectetur non libero in tristique. Vivamus vestibulum ante non arcu fermentum vulputate. Duis vitae lacinia mauris. Vivamus mi nisi, bibendum vel magna ut, placerat mattis massa. Etiam consectetur risus sapien, at pulvinar odio cursus sit amet.
+        </p>
+        </div>
+    <div class="child-2">
+        <p id="para2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit scelerisque eros, id viverra mi accumsan ut. Duis malesuada finibus commodo. Nulla eu libero nec arcu volutpat porta. Vestibulum dignissim felis vitae lorem vulputate, eget gravida diam dapibus. Nam viverra orci eget mollis viverra. Donec vel tortor eget ante viverra malesuada. Nulla id mauris non neque auctor fringilla. Donec efficitur varius sagittis. Nam dictum, arcu ac sodales mattis, purus turpis efficitur tortor, sed gravida erat arcu nec sem. Vestibulum malesuada congue erat. Maecenas ultricies tellus eu risus congue interdum.consectetur adipiscing elit. Etiam blandit scelerisque eros, id viverra mi accumsan ut.
+        </p></div>
+    <div class="child-3"> 
+        <p id="para3">
+            Proin at tellus dui. Nullam maximus mauris ipsum, et pretium diam vehicula non. Pellentesque venenatis eros in lacus lacinia, vitae laoreet eros finibus. Donec pretium bibendum ipsum et elementum. Sed arcu justo, elementum sit amet aliquet ac, sollicitudin sit amet quam. Vivamus efficitur eleifend arcu, eu ultrices lorem dictum eu. Pellentesque dignissim elit eros, ut auctor ex mattis eu. Cras urna dui, commodo sed dapibus quis, blandit sit amet mauris. Aliquam nisl velit, pretium a fringilla condimentum, mattis ut enim. Pellentesque diam velit, pharetra in laoreet eget, aliquet a turpis. Donec nec libero et mi auctor dictum at quis mi. Quisque nec dictum eros. Mauris finibus risus quis ipsum ultricies, sit amet ornare felis pellentesque. Sed sed convallis elit, et pellentesque urna. Fusce sit amet tortor odio. Suspendisse vel tellus quis erat scelerisque euismod nec sed dolor.Pellentesque venenatis eros in lacus lacinia, vitae laoreet eros finibus. Donec pretium bibendum ipsum et elementum. Sed arcu justo, elementum sit amet aliquet ac, sollicitudin sit amet quam. Vivamus efficitur eleifend arcu, eu ultrices lorem dictum eu. Pellentesque dignissim elit eros, ut auctor ex mattis eu. Cras urna dui, commodo sed dapibus quis, blandit sit amet mauris. Aliquam nisl velit, pretium a fringilla condimentum, mattis ut enim. Pellentesque diam velit, pharetra in laoreet eget, aliquet a turpis. Donec nec libero et mi auctor dictum at quis mi. Quisque nec dictum eros. Mauris finibus risus quis ipsum ultricies, sit amet ornare felis pellentesque. Sed sed convallis elit, et pellentesque urna. Fusce sit amet tortor odio
+        </p>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <footer>
+        <p class="footertext" >
+            Copyright notices are not required by law. However, having one helps protect your creative content so you should have one even though not required.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
+

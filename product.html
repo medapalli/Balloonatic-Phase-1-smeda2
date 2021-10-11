@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html,body{
+            height:100%;
+            margin:0;
+            padding:0;
+            border:0;
+            background-color: #c46565;
+        }
+
+        #clockdate{
+            
+            margin-top: 80px;
+           
+           margin-left: 200px;
+        }
+
+        #divheader {
+            background-color: grey;
+            width: 100%;
+            height: 10px;
+            padding: 50px;
+        }
+
+        body > div >header >span {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            margin-left: 140px;
+            color: #e7572b;
+            
+        }
+        div{
+            margin:0;
+            border:0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+
+            display: inline;
+            float: right;
+            margin-right: 50px;
+        }
+
+        .topnav {
+
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .topnav a {
+            color: white;
+        }
+
+        #logo-img {
+            position: absolute;
+            margin: 1em;
+            margin-top: 10px;
+            height: 90px;
+            width: 90px;
+        }
+
+
+        #productcontainer {
+            width: 100%;
+            height: 100px;
+        }
+
+        #producttext {
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 16px;
+        }
+
+             
+        #header {
+            position: absolute;
+            height: 20px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 10px;
+        }
+
+        .grid-container1 {
+            display: grid;
+            width: auto;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-gap: 10px;
+            background-color: #c46565;
+            padding: 10px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .grid-container1 > div {
+            background-color: rgba(197, 82, 82, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .grid-container1 > div > a{
+            color: white;
+
+        }
+
+
+        .parent {
+            display: grid;
+            grid-template-columns: auto;
+            grid-row-gap: 5px;
+            grid-column-gap: 40px;
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .parent > div {
+            border: 1px solid #ccc;
+            margin-top: 4px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: azure;
+        }
+
+        .child-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 250px;
+            
+
+        }
+
+        .product-img { 
+          
+            max-width: 100%; 
+            height: 200px; 
+        }
+
+        .child-2 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3; 
+            height: 250px;
+        }
+    
+
+        .child-3 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            height: 250px;
+
+        }
+
+      
+
+        .child-4 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2; 
+            height: 250px;
+
+        }
+
+        .child-5 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 250px;
+
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #caa4a4;
+            height: 80px;
+            width: 100%;
+            padding-left: 20px;
+            margin-left: auto;
+        }
+        .footertext {
+        padding-top: 20px;
+        text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div id="divheader">  
+    <header id="header">
+        <img src="./images/logo.jpg" alt="logo" id="logo-img">
+        <span>The Ballonatic Asylum</span>
+        <ul class="topnav" id="nav-bar">
+
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About </a></li>
+        </ul>
+    </header>
+</div>
+
+<div class="grid-container1">
+    <div class="item1"><a href="product.html">Birthday Bouquets</a></div>
+    <div class="item2"><a href="product.html">Birthday Ballons</a></div>
+    <div class="item3"><a href="product.html">Ballons Accessories</a></div>
+    <div class="item4"><a href="product.html">Ballons Decoration</a></div>
+    <div class="item5"><a href="product.html">Ballons in Bulk</a></div>
+
+</div>
+
+
+<div id="productcontainer">
+    
+    <p id="producttext" >The main features of the business are a large selection of balloons and balloon-themed products for
+        all occasions, local delivery within 75 miles of the main store, two-day shipping anywhere in the USA, free
+        shipping on orders over $100, and a "Balloon-of-the-Month" club that sends an assortment of mystery balloons in
+        a box once per month for $39.95.Hello and welcome to my free training "How to Market Your Balloon Business and Attract Customers All Year Round."
+         If you prefer reading instead of watching, you'll find the transcript below the video.Hello and welcome to my free training "How to Market Your
+          Balloon Business and Attract Customers All Year Round." If you prefer reading instead of watching, you'll find the transcript below the video.</p>
+</div>
+
+
+<div class="parent">
+    <div class="child-1">
+        <div>
+            <a href="./home4.html">
+            <div>
+                <img src="./images/product1.jpg" alt="logo" class="product-img" >
+            </div>
+            
+            </a>
+        </div>
+        
+            <div>
+                <a href="./home4.html">Inch Circus Ballons Clown Magic Hat<br>
+                </a>
+                <span> $9.7 </span>
+                
+            </div>
+           
+           
+        </div>
+    <div class="child-2">
+        <div>
+            <a href="./home4.html">
+            <img src="./images/product2.jpg" alt="logo" class="product-img" >
+            </a>
+        </div>
+      
+        <div>
+            <a href="./home4.html">15" Coral Latex Dark Blue<br>
+            </a>
+            
+            <span> $12.5 </span>
+        </div>
+        </div>
+    <div class="child-3"> 
+        <div>
+            <a href="./home4.html">
+                <img src="./images/product3.jpg" alt="logo" class="product-img" >
+            </a>
+        </div>
+
+        <div>
+            <a href="./home4.html">Black Long Twisty Balloon<br>
+            </a>
+            
+            <span> $15.2 </span>
+        </div>
+        
+    </div>
+
+    <div class="child-4"> 
+        <div>
+            <a href="./home4.html">
+            <img src="./images/product4.jpg" alt="logo" class="product-img" >
+            </a>
+        </div>
+
+        <div>
+            <a href="./home4.html">Cartoon Cat Fol Balloon<br>
+            </a>
+            
+            <span> $19.6 </span>
+        </div>
+       
+    </div>
+
+    <div class="child-5"> 
+        <div>
+            <a href="./home4.html">
+            <img src="./images/product5.jpg" alt="logo" class="product-img" >
+            </a>
+        </div>
+
+        <div>
+            <a href="./home4.html">Layered Premium Helium Metal Balloon<br>
+            </a>
+            
+            <span> $20.1 </span>
+        </div>
+      
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <footer>
+        <p class="footertext" >
+            Copyright notices are not required by law. However, having one helps protect your creative content so you should have one even though not required.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        html,body{
+            height:100%;
+            margin:0;
+            padding:0;
+            border:0;
+            background-color: #c46565;
+        }
+
+        #clockdate{
+            
+            margin-top: 60px;
+           
+           margin-left: 200px;
+        }
+
+        #divheader {
+            background-color: grey;
+            width: 100%;
+            height: 85px;
+        }
+        div{
+            margin:0;
+            border:0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+
+            display: inline;
+            float: right;
+            margin-right: 50px;
+        }
+
+        .topnav {
+
+            margin-right: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .topnav a {
+            color: white;
+        }
+
+        #logo-img {
+            position: absolute;
+            margin: 1em;
+            margin-top: 10px;
+            height: 90px;
+            width: 90px;
+        }
+
+        .grid-container1 {
+            display: grid;
+            width: auto;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-gap: 10px;
+            background-color: #c46565;
+            padding: 10px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .grid-container1 > div {
+            background-color: rgba(197, 82, 82, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .grid-container1 > div > a{
+            color: white;
+
+        }
+        #contactcontainer {
+            width: 100%;
+            height: 200px;
+        }
+
+        
+        #subcontainer {
+            width: 100%;
+            height: 200px;
+            margin-top: 200px;
+            margin-left: 250px;
+            
+        }
+
+        #contactdtl{
+            margin-left: 100px;
+        }
+
+        #contactdiv {
+            background-color:skyblue;
+            width: 100%;
+            height: 200px;
+        }
+
+
+        #contacttext {
+            text-align: justify;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 40px;
+            
+        }
+
+        #contact-img {
+            height: 250px;
+            width: 100%;
+        }
+
+        
+        #header {
+            position: absolute;
+            height: 20px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding-top: 10px;
+        }
+
+          
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #caa4a4;
+            height: 80px;
+            width: 100%;
+            padding-left: 20px;
+            margin-left: auto;
+        }
+        .footertext {
+        padding-top: 20px;
+        text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div id="divheader">  
+    <header id="header">
+        <img src="./images/logo.jpg" alt="logo" id="logo-img">
+        <ul class="topnav" id="nav-bar">
+
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="About.html">About </a></li>
+        </ul>
+    </header>
+</div>
+
+
+<div class="grid-container1">
+    <div class="item1"><a href="product.html">Birthday Bouquets</a></div>
+    <div class="item2"><a href="product.html">Birthday Ballons</a></div>
+    <div class="item3"><a href="product.html">Ballons Accessories</a></div>
+    <div class="item4"><a href="product.html">Ballons Decoration</a></div>
+    <div class="item5"><a href="product.html">Ballons in Bulk</a></div>
+
+</div>
+
+
+
+<div id="contactcontainer">
+    <div id="contactdtl">
+    <span>Contact us on email:info@ballonsbusiness.com</span><br>
+    <span>Tel No: 203-200-2000</span><br>
+    <span>1000, Spring Field, Boston Post Road</span><br>
+    <span>West Haven , 65016</span>
+    </div>
+
+    <p id="contacttext">Aliquam sagittis, risus quis eleifend rutrum, nunc turpis tempor justo, ac porttitor urna sem venenatis quam. Suspendisse aliquet arcu quis magna molestie, semper malesuada ipsum iaculis. Nunc nisi nisl, sagittis at lectus in, finibus dictum purus. Integer vel enim eleifend, aliquet quam at, ultrices ligula. Cras vel viverra leo, condimentum iaculis massa. Vestibulum dolor neque, interdum id posuere sed, mattis eu nulla. Morbi leo purus, tempor id ligula nec, finibus placerat lectus. Donec quis nisi enim. Sed vitae fringilla risus, id faucibus tortor. Vivamus vehicula ante ac massa egestas, non luctus magna interdum. Morbi volutpat placerat metus eget hendrerit.Nullam nec viverra est. Suspendisse interdum odio et arcu varius, nec aliquam elit blandit. Phasellus vestibulum ullamcorper nulla, quis iaculis mi tristique eu. Aliquam id volutpat nunc, pharetra dapibus velit. Fusce condimentum fringilla enim in scelerisque.</p>
+
+
+    <img src="./images/hero.jpg" alt="Hero Image" id="contact-img">
+
+</div>
+
+<div id="subcontainer">
+
+    
+    <p id="subtext">Subscribe here to receive promotional material from us.</p>
+    <form action="./home4.html">
+    <label for="email">email address</label>
+    <input type="email" id="email" name="email" required>
+    
+    <button type="submit" class="subscribe" id="subscribe" value="Subscribe" onclick="check()">Subscribe</button>
+    </form>
+
+</div>
+
+
+<div class="footer">
+    <footer>
+        <p class="footertext" >
+            Copyright notices are not required by law. However, having one helps protect your creative content so you should have one even though not required.
+        </p>
+    </footer>
+</div>
+
+<script>
+    
+    function check()
+    
+{
+  alert("You have clicked Subscribed . Please make sure you enter valid email address")
+ 
+}
+
+
+</script>
+
+</body>
+</html>
+
